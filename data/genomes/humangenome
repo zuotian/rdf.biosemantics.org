@@ -1,0 +1,130 @@
+# Saved by TopBraid on Tue Oct 02 16:03:19 CEST 2012
+# baseURI: http://rdf.biosemantics.org/data/genomes/humangenome
+# imports: http://rdf.biosemantics.org/ontologies/genomecomponents
+
+@prefix :        <http://rdf.biosemantics.org/data/genomes/humangenome#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix gencom:  <http://rdf.biosemantics.org/ontologies/genomecomponents#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://rdf.biosemantics.org/data/genomes/humangenome>
+      rdf:type owl:Ontology ;
+      owl:imports <http://rdf.biosemantics.org/ontologies/genomecomponents> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+      dc:creator "Andrew Gibson"^^xsd:string ;
+      dcterms:created "2012-10-01"^^xsd:string ;
+      dcterms:modified "2012-10-02"^^xsd:string .
+
+:humanGenome
+      rdf:type gencom:Genome ;
+      rdfs:label "Human Genome"^^xsd:string ;
+      gencom:genomeOf :Human ;
+      gencom:hasComponent :chr6 , :chr10 , :chr18 , :chr11 , :chr14 , :chr5 , :chr4 , :chr9 , :chr8 , :mitochondrial , :chr2 , :chr22 , :chr17 , :chr20 , :chr3 , :chr12 , :chr7 , :chr1 , :chr13 , :chr21 , :chr19 , :chr16 , :chry , :chr15 , :chrx .
+
+:Human
+      rdf:type gencom:Organism ;
+      rdfs:label "Human"^^xsd:string .
+
+:chr18
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 18"^^xsd:string .
+
+:chr8
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 8"^^xsd:string .
+
+:chr22
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 22"^^xsd:string .
+
+:chr12
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 12"^^xsd:string .
+
+:chr10
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 10"^^xsd:string .
+
+:chr6
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 6"^^xsd:string .
+
+:chry
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome Y"^^xsd:string .
+
+:chr4
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 4"^^xsd:string .
+
+:chr15
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 15"^^xsd:string .
+
+:chr20
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 20"^^xsd:string .
+
+:chr17
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 17"^^xsd:string .
+
+:chr2
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 2"^^xsd:string .
+
+:chr7
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 7"^^xsd:string .
+
+:chr19
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 19"^^xsd:string .
+
+:chr13
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 13"^^xsd:string .
+
+:chr9
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 9"^^xsd:string .
+
+:chr21
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 21"^^xsd:string .
+
+:chr11
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 11"^^xsd:string .
+
+:chrx
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome X"^^xsd:string .
+
+:chr5
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 5"^^xsd:string .
+
+:chr3
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 3"^^xsd:string .
+
+:chr14
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 14"^^xsd:string .
+
+:chr1
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 1"^^xsd:string .
+
+:mitochondrial
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Mitochondrial Chromosome"^^xsd:string .
+
+:chr16
+      rdf:type gencom:Chromosome ;
+      rdfs:label "Human Chromosome 16"^^xsd:string .

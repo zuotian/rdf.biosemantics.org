@@ -1,0 +1,12 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+@base <http://rdf.biosemantics.org/data/riken/fantom5/project> .
+
+<> a doap:Project ;
+   doap:name "FANTOM5" ;
+   doap:description """FANTOM is an international research consortium established by Dr. Hayashizaki and his colleagues
+                       in 2000 to assign functional annotations to the full-length cDNAs that were collected during the
+                       Mouse Encyclopedia Project at RIKEN"""@@en ;
+   doap:homepage <http://fantom.gsc.riken.jp/> .

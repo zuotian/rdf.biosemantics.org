@@ -1,0 +1,202 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>RDF at BioSematics dot Org</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="static/ui-lightness/jquery-ui-1.8.21.custom.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/highlight.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#tabs" ).tabs();
+
+            $(document).ready(function(){
+                $('.show_inline').each(function(){
+                    var url = $(this).attr('href');
+                    $(this).click(function(){
+                        $.ajax({
+                            url: url,
+                            headers: { 'Accept' : "text/html-rdf" },
+                            success : function(response) {
+                                $('div#inline-rdf').empty().append(response);
+                            }
+                        });
+                        return false;
+                    });
+                    $(this).after("<a href='" + url + "'><span class='ui-icon ui-icon-extlink'></span></a>");
+                });
+
+                $('#submit').click(function(){
+                    $.get('/query/nanopubs', $('form#query').serialize(), function(response){
+                        $('div#query-result').empty().append(response);
+                    });
+                    return false;
+                });
+            });
+        });
+    </script>
+    <style>
+        .ui-icon {
+            display: inline-block !important;
+        }
+
+        fieldset {
+            margin: 2em 0;
+            padding: 1em;
+            border: 1px #ccc solid;
+        }
+
+        input[type=submit], button, input[type=button] {
+            padding: 0.5em;
+        }
+
+        .clear {
+            min-height: 2em;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div id="pagewrapper">
+
+    <div id="header"><h1><a href="/">RDF.Biosemantics.org</a></h1></div>
+
+    <div id="content">
+        <div id="main-no-side-bar">
+            <h2>Here is the list of urls that will return RDF content.</h2>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Nanopublications</a></li>
+                    <li><a href="#tabs-2">Examples</a></li>
+                    <li><a href="#tabs-3">Ontologies</a></li>
+                    <li><a href="#tabs-4">Data</a></li>
+                    <li><a href="#tabs-5">Query</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <div>
+                        <h3>Concept Profile Matching Nanopublications</h3>
+                        <h5>Gene Disease Associations</h5>
+                        <p>
+                            You can find individual Nanopublication using this url pattern.
+                            <ul>
+                                <li><a href="nanopubs/cpm/gene_disease_associations/000001" class="show_inline">http://rdf.biosemantics.org/nanopubs/cpm/gene_disease_associations/000001</a></li>
+                                <li><a href="nanopubs/cpm/gene_disease_associations/000002" class="show_inline">http://rdf.biosemantics.org/nanopubs/cpm/gene_disease_associations/000002</a></li>
+                                <li><a href="nanopubs/cpm/gene_disease_associations/000003" class="show_inline">http://rdf.biosemantics.org/nanopubs/cpm/gene_disease_associations/000003</a></li>
+                                <li>...</li>
+                            </ul>
+                        </p>
+                        <h5>Protein Protein Associations</h5>
+                            <p>
+                                You can find individual Nanopublication using this url pattern.
+                            <ul>
+                                <li><a href="nanopubs/cpm/protein_protein_associations/000001" class="show_inline">http://rdf.biosemantics.org/nanopubs/cpm/protein_protein_associations/000001</a></li>
+                                <li><a href="nanopubs/cpm/protein_protein_associations/000002" class="show_inline">http://rdf.biosemantics.org/nanopubs/cpm/protein_protein_associations/000002</a></li>
+                                <li><a href="nanopubs/cpm/protein_protein_associations/000003" class="show_inline">http://rdf.biosemantics.org/nanopubs/cpm/protein_protein_associations/000003</a></li>
+                                <li>...</li>
+                            </ul>
+                        </p>
+                        <div class="clear"></div>
+
+                        <h3>FANTOM5 Nanopublications</h3>
+                        <p>
+                            Example nanopublications are here.
+                            <ul>
+                                <li><a href="nanopubs/riken-fantom5/cage_clusters/1" class="show_inline">http://rdf.biosemantics.org/nanopubs/riken-fantom5/cage_clusters/1"</a> (with 180K examples) </li>
+                                <li><a href="nanopubs/riken-fantom5/gene_associations/8" class="show_inline">http://rdf.biosemantics.org/nanopubs/riken-fantom5/gene_associations/8"</a> (with 100K examples)</li>
+                                <li>http://rdf.biosemantics.org/nanopubs/riken/fantom5/ff_expressions/1 (up coming)</li>
+                            </ul>
+                        </p>
+
+                        <div class="clear"></div>
+                        <hr>
+                        <div class="clear"></div>
+                        <div id="inline-rdf"></div>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <p>
+                    <ul>
+                        <li><a href="examples/sequence_annotation">Sequence Annoation</a></li>
+                        <li><a href="examples/gene_disease_nanopub">Gene disease nanopub example (latest)</a></li>
+                    </ul>
+                    </p>
+                </div>
+                <div id="tabs-3">
+                    <p>
+                        <ul>
+                            <li><a href="ontologies/rsa">Ontology of Reference Sequence Annotation</a></li>
+                            <li><a href="ontologies/genomecomponents">Genome Component Ontology</a></li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="tabs-4">
+                        <h3>Genomes</h3>
+                        <p>
+                            <ul>
+                                <li><a href="data/genomes/humangenome">Human genome</a></li>
+                            </ul>
+                        </p>
+                        <h3>Genome Assemblies</h3>
+                        <p>Generated based on Genome Reference Consortium assembly reports. </p>
+                        <p>
+                            <ul>
+                                <li><a href="data/genomeassemblies/hg19">HG19</a></li>
+                            </ul>
+                        </p>
+                        <h3>Text mining vocabularies</h3>
+                        <p>
+                            <ul>
+                                <li><a href="data/text_mining">Text mining</a></li>
+                            </ul>
+                        </p>
+                </div>
+                <div id='tabs-5'>
+                    <h3>Query nanopublication stores</h3>
+                    <fieldset>
+                    <form id='query'>
+                        <p>
+                            <label for='store'>Select the store</label>
+                            <select name='store'>
+                                <option value="RIKEN_FANTOM5_CAGE_CLUSTERS">FANTOM5 cage clusters</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for='chr'>Select chromosome</label>
+                            <select name='chr'>
+                                {% for i in range(1, 22) %}
+                                    <option value="chr{{i}}" {% if i == 16 %}selected="selected"{% endif %}>chromosome {{i}}</option>
+                                {% endfor %}
+                                {% for i in ['X', 'Y'] %}
+                                    <option value="chr{{i}}">chromosome {{i}}</option>
+                                {% endfor %}
+                            </select>
+                        </p>
+                        <p>
+                            <label for='orientation'>Strand:</label>
+                            <select name='orientation'>
+                                <option value='both'>both</option>
+                                <option value='forward'>+</option>
+                                <option value='reverse'>-</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for='start'>From: </label>
+                            <input type='text' name='start' value='300000'/>
+                            <label for='end'>To: </label>
+                            <input type='text' name='end' value='350000'/>
+                        </p>
+                        <input type='submit' name='submit' value='submit' id='submit'/>
+                    </form>
+                    </fieldset>
+                    <div id="query-result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>&copy; Copyright 2013 - <a href="http://biosemantics.org">Biosemantics Group</a></p>
+    </div>
+</div>
+</body>
+</html>

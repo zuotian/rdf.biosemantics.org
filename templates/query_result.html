@@ -1,0 +1,15 @@
+{% if error %}
+    {{ error }}
+{% else %}
+    <p>Your query returned {{ rows|length }} items.</p>
+    <pre>{{ q|escape }}</pre>
+    <p style="float:right;">
+        <input type="button" value="Download the result as USCS BED track"
+               onClick="location.href='/generate_track?action=download&{{ request.query_string }}'" />
+        <input type="button" value="Show results in USCS genome browser"
+               onclick="location.href='http://genome.ucsc.edu/cgi-bin/hgTracks?org=human&position={{ request.args.chr }}&hgt.customText={{ track_url|quote }}'" />
+    </p>
+    {% for row in rows %}
+        <p><a href="{{ row.np.value }}" target="_blank">{{ row.cluster }}</a></p>
+    {% endfor %}
+{% endif %}

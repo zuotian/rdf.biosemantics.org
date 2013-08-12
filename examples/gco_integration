@@ -1,0 +1,24 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rsa: <http://rdf.biosemantics.org/ontologies/rsa#> .
+@prefix hg19: <http://rdf.biosemantics.org/data/genomeassemblies/hg19#> .
+@prefix hg18: <http://rdf.biosemantics.org/data/genomeassemblies/hg18#> .
+@prefix humgen: <http://rdf.biosemantics.org/data/genomes/humangenome#> .
+
+@base <http://rdf.biosemantics.org/example/gco_integration> .
+
+_:gene rsa:isAnnotatedAt _:region1, _:region2 .
+
+_:region1 a rsa:AnnotationLocation; 
+         rsa:mapsTo hg19:chr1 ;
+          rsa:start "69090"^^xsd:int ;
+          rsa:end "70008"^^xsd:int ;
+          rsa:hasOrientation rsa:forward ;
+          rsa:refseqID "NM_001005484";.
+
+_:region2 a rsa:AnnotationLocation ; 
+         rsa:mapsTo hg18:chr1 ;
+          rsa:start "58953"^^xsd:int ;
+          rsa:end "59871"^^xsd:int ;
+          rsa:hasOrientation rsa:forward ;
+          rsa:refseqID "NM_001005484" .
+

@@ -1,0 +1,136 @@
+@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix gencom: <http://rdf.biosemantics.org/ontologies/genomecomponents#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://rdf.biosemantics.org/ontologies/genomecomponents> .
+
+<http://rdf.biosemantics.org/ontologies/genomecomponents> rdf:type owl:Ontology ;
+                                                          
+                                                          rdfs:label "Genome Component Ontology"^^xsd:string ;
+                                                          
+                                                          owl:versionInfo "0.2"^^xsd:string ;
+                                                          
+                                                          dcterms:created "2012-10-01"^^xsd:date ;
+                                                          
+                                                          dcterms:modified "2013-5-23"^^xsd:dateTime ;
+                                                          
+                                                          dc:creator "Andrew Gibson"^^xsd:string ;
+                                                          
+                                                          rdfs:comment "The Genome Component Ontology is intended to define the abstract division of the total genetic information of an organism by its physical separation into different components, thereby providing a high level reference point to which more specific descriptions of the characteristics of these components can be linked. It is not intended to describe any specific characteristics of genome components derived through experimentation such as gene content, length, function, location, loci or sequence, such descriptions can be linked to instances described using this schema to aid integration."^^xsd:string ;
+                                                          
+                                                          dc:contributor "Zuotian Tatum"^^xsd:string .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://rdf.biosemantics.org/ontologies/genomecomponents#genomeOf
+
+gencom:genomeOf rdf:type owl:ObjectProperty ;
+                
+                rdfs:domain gencom:Genome ;
+                
+                rdfs:range gencom:Organism .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/genomecomponents#hasComponent
+
+gencom:hasComponent rdf:type owl:ObjectProperty ;
+                    
+                    rdfs:label "hasComponent"^^xsd:string ;
+                    
+                    rdfs:domain gencom:Genome ;
+                    
+                    rdfs:range gencom:GenomeComponent ;
+                    
+                    owl:inverseOf gencom:isComponentOf .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/genomecomponents#isComponentOf
+
+gencom:isComponentOf rdf:type owl:FunctionalProperty ,
+                              owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://rdf.biosemantics.org/ontologies/genomecomponents#Chromosome
+
+gencom:Chromosome rdf:type owl:Class ;
+                  
+                  rdfs:label "Chromosome"^^xsd:string ;
+                  
+                  rdfs:subClassOf gencom:GenomeComponent .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/genomecomponents#Genome
+
+gencom:Genome rdf:type owl:Class ;
+              
+              rdfs:label "Genome"^^xsd:string ;
+              
+              rdfs:subClassOf owl:Thing .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/genomecomponents#GenomeComponent
+
+gencom:GenomeComponent rdf:type owl:Class ;
+                       
+                       rdfs:label "Genome Component"^^xsd:string ;
+                       
+                       rdfs:subClassOf owl:Thing .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/genomecomponents#Organism
+
+gencom:Organism rdf:type owl:Class ;
+                
+                rdfs:label "Organism"^^xsd:string ;
+                
+                rdfs:subClassOf owl:Thing .
+
+
+
+
+###  Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net
+

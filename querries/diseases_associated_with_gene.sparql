@@ -1,0 +1,16 @@
+PREFIX np: <http://www.nanopub.org/nschema#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX pav: <http://swan.mindinformatics.org/ontologies/1.2/pav/>
+
+select ?np ?disease ?pvalue
+where
+{
+ ?np a np:Nanopublication.
+ ?np np:hasAssertion ?assertion.
+ ?np np:hasProvenance ?p.
+ ?p np:hasAttribution ?attr.
+ GRAPH ?assertion {?association sio:refers-to <http://bio2rdf.org/geneid:55835>, ?disease.
+                   ?x sio:has-value ?pvalue.}
+
+} limit 100

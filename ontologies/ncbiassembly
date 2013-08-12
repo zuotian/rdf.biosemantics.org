@@ -1,0 +1,294 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rs: <http://rdf.biosemantics.org/ontologies/referencesequence#> .
+@prefix : <http://rdf.biosemantics.org/ontologies/ncbiassembly#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://rdf.biosemantics.org/ontologies/ncbiassembly> .
+
+<http://rdf.biosemantics.org/ontologies/ncbiassembly> rdf:type owl:Ontology ;
+                                                      
+                                                      <http://purl.org/dc/elements/1.1/created> "2012-10-30"^^xsd:dateTime ;
+                                                      
+                                                      <http://purl.org/dc/elements/1.1/creator> "Zuotian Tatum"^^rdfs:Literal ;
+                                                      
+                                                      rdfs:comment "Naive translation of GRC assembly report. See http://www.ncbi.nlm.nih.gov/assembly/help/ for details."@en ;
+                                                      
+                                                      owl:imports <http://rdf.biosemantics.org/ontologies/referencesequence> .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#hasRole
+
+:hasRole rdf:type owl:ObjectProperty ;
+         
+         rdfs:range :SequenceRole ;
+         
+         rdfs:domain rs:ReferenceSequence .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#inAssemblyUnit
+
+:inAssemblyUnit rdf:type owl:ObjectProperty ;
+                
+                rdfs:range :AssemblyUnit ;
+                
+                rdfs:domain rs:ReferenceSequence .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#genomeRepresentation
+
+:genomeRepresentation rdf:type owl:DatatypeProperty .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#level
+
+:level rdf:type owl:DatatypeProperty ;
+       
+       rdfs:domain rs:ReferenceGenomeAssembly .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#organism
+
+:organism rdf:type owl:DatatypeProperty ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#releaseType
+
+:releaseType rdf:type owl:DatatypeProperty ;
+             
+             rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#taxID
+
+:taxID rdf:type owl:DatatypeProperty .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#type
+
+:type rdf:type owl:DatatypeProperty ;
+      
+      rdfs:domain rs:ReferenceGenomeAssembly .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#AssemblyLevel
+
+:AssemblyLevel rdf:type owl:Class .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#AssemblyUnit
+
+:AssemblyUnit rdf:type owl:Class .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#DiploidAssembly
+
+:DiploidAssembly rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf rs:GenomeAssembly ;
+                 
+                 rdfs:comment "A genome assembly for which a chromosome assembly is available for both sets of an individual's chromosomes. It is anticipated that a diploid genome assembly is representing the genome of an individual. Therefore it is not anticipated that alternate loci will be defined for this assembly, although it is possible that unlocalized or unplaced sequences could be part of the assembly."@en .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#HaploidAltsAssembly
+
+:HaploidAltsAssembly rdf:type owl:Class ;
+                     
+                     rdfs:subClassOf rs:GenomeAssembly ;
+                     
+                     rdfs:comment "The collection of chromosome assemblies, unlocalized and unplaced sequences and alternate loci that represent an organism's genome. Any locus may be represented 0, 1 or >1 time, but entire chromosomes are only represented 0 or 1 times."@en .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#HaploidAssembly
+
+:HaploidAssembly rdf:type owl:Class ;
+                 
+                 rdfs:subClassOf rs:GenomeAssembly ;
+                 
+                 rdfs:comment "The collection of chromosome assemblies, unlocalized and unplaced sequences that represent an organism's genome. Any locus may be represented 0 or 1 time, and entire chromosomes are only represented 0 or 1 times."@en .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#SequenceRole
+
+:SequenceRole rdf:type owl:Class .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#UnrestrictedAssembly
+
+:UnrestrictedAssembly rdf:type owl:Class ;
+                      
+                      rdfs:subClassOf rs:GenomeAssembly ;
+                      
+                      rdfs:comment "The set of chromosomes, unlocalized and unplaced (sometimes called 'random') and alternate sequences used to represent an organism's genome. Assemblies are constructed from 1 or more assembly units."@en .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#alt_ref_loci
+
+:alt_ref_loci rdf:type :AssemblyUnit ,
+                       owl:NamedIndividual .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#alternative_scaffold
+
+:alternative_scaffold rdf:type :SequenceRole ,
+                               owl:NamedIndividual .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#chromosome
+
+:chromosome rdf:type :SequenceRole ,
+                     owl:NamedIndividual .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#chromosome_level
+
+:chromosome_level rdf:type :AssemblyLevel ,
+                           owl:NamedIndividual ;
+                  
+                  rdfs:comment "There is sequence for one or more chromosomes. This could be a completely sequenced chromosome (gapless) or a chromosome containing scaffolds with unlinked gaps between them."@en .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#contig_level
+
+:contig_level rdf:type :AssemblyLevel ,
+                       owl:NamedIndividual ;
+              
+              rdfs:comment "Some sequence contigs have been connected across gaps to create scaffolds, but the scaffolds are all unplaced or unlocalized."@en .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#fix_patch
+
+:fix_patch rdf:type :SequenceRole ,
+                    owl:NamedIndividual .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#non_nuclear
+
+:non_nuclear rdf:type :AssemblyUnit ,
+                      owl:NamedIndividual .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#novel_patch
+
+:novel_patch rdf:type :SequenceRole ,
+                      owl:NamedIndividual .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#patch
+
+:patch rdf:type :AssemblyUnit ,
+                owl:NamedIndividual .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#primary_assembly
+
+:primary_assembly rdf:type :AssemblyUnit ,
+                           owl:NamedIndividual .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#scaffold_level
+
+:scaffold_level rdf:type :AssemblyLevel ,
+                         owl:NamedIndividual ;
+                
+                rdfs:comment "Nothing is assembled beyond the level of sequence contigs."@en .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#unlocalized_scaffold
+
+:unlocalized_scaffold rdf:type :SequenceRole ,
+                               owl:NamedIndividual .
+
+
+
+###  http://rdf.biosemantics.org/ontologies/ncbiassembly#unplaced_scaffold
+
+:unplaced_scaffold rdf:type :SequenceRole ,
+                            owl:NamedIndividual .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

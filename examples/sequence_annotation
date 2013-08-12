@@ -1,0 +1,15 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rsa: <http://rdf.biosemantics.org/ontologies/rsa#> .
+@prefix hg19: <http://rdf.biosemantics.org/data/genomeassemblies/hg19#> .
+
+@base <http://rdf.biosemantics.org/examples/sequence_annotation#> .
+
+    _:gene a rsa:SequenceAnnotation ;
+           rsa:isAnnotatedAt _:location .
+
+    _:location a rsa:AnnotationLocation ;
+               rsa:start "69090"^^xsd:int ;
+               rsa:end "70008"^^xsd:int ;
+               rsa:mapsTo hg19:chr1 ;
+           	   rsa:refseqID "NM_001005484";
+               rsa:hasOrientation rsa:forward .

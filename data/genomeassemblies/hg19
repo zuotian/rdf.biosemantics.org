@@ -1,0 +1,2147 @@
+@prefix : <http://rdf.biosemantics.org/data/genomeassemblies/hg19#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hg: <http://rdf.biosemantics.org/data/genomes/humangenome#> .
+@prefix ncbi: <http://rdf.biosemantics.org/ontologies/ncbiassembly#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rsa: <http://rdf.biosemantics.org/ontologies/rsa#> .
+
+: a dcterms:document;
+   dcterms:created "2012-11-26T10:02:00Z";
+   dcterms:creator "Zuotian Tatum" .
+
+:Assembly a ncbi:HaploidAltAssembly;
+   rdfs:label "Genome Reference Consortium Human Build 37 patch release 10 (GRCh37.p10)";
+   dcterms:title "GRCh37.p10";
+   dcterms:creator "Genome Reference Consortium";
+   ncbi:genomeRepresentation "full";
+   ncbi:level ncbi:chromosome_level;
+   ncbi:releaseType "patch";
+   ncbi:taxID <http://purl.obolibrary.org/obo/NCBITaxon_9606>;
+   rsa:genBankAssemblyID "GCA_000001405.11" .
+
+:chr1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000663.1";
+   rsa:refSeqID "NC_000001.10";
+   rsa:represents hg:chr1 .
+
+:chr10 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000672.1";
+   rsa:refSeqID "NC_000010.10";
+   rsa:represents hg:chr10 .
+
+:chr11 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000673.1";
+   rsa:refSeqID "NC_000011.9";
+   rsa:represents hg:chr11 .
+
+:chr12 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000674.1";
+   rsa:refSeqID "NC_000012.11";
+   rsa:represents hg:chr12 .
+
+:chr13 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000675.1";
+   rsa:refSeqID "NC_000013.10";
+   rsa:represents hg:chr13 .
+
+:chr14 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000676.1";
+   rsa:refSeqID "NC_000014.8";
+   rsa:represents hg:chr14 .
+
+:chr15 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000677.1";
+   rsa:refSeqID "NC_000015.9";
+   rsa:represents hg:chr15 .
+
+:chr16 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000678.1";
+   rsa:refSeqID "NC_000016.9";
+   rsa:represents hg:chr16 .
+
+:chr17 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000679.1";
+   rsa:refSeqID "NC_000017.10";
+   rsa:represents hg:chr17 .
+
+:chr18 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000680.1";
+   rsa:refSeqID "NC_000018.9";
+   rsa:represents hg:chr18 .
+
+:chr19 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000681.1";
+   rsa:refSeqID "NC_000019.9";
+   rsa:represents hg:chr19 .
+
+:chr2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000664.1";
+   rsa:refSeqID "NC_000002.11";
+   rsa:represents hg:chr2 .
+
+:chr20 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000682.1";
+   rsa:refSeqID "NC_000020.10";
+   rsa:represents hg:chr20 .
+
+:chr21 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000683.1";
+   rsa:refSeqID "NC_000021.8";
+   rsa:represents hg:chr21 .
+
+:chr22 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000684.1";
+   rsa:refSeqID "NC_000022.10";
+   rsa:represents hg:chr22 .
+
+:chr3 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000665.1";
+   rsa:refSeqID "NC_000003.11";
+   rsa:represents hg:chr3 .
+
+:chr4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000666.1";
+   rsa:refSeqID "NC_000004.11";
+   rsa:represents hg:chr4 .
+
+:chr5 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000667.1";
+   rsa:refSeqID "NC_000005.9";
+   rsa:represents hg:chr5 .
+
+:chr6 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000668.1";
+   rsa:refSeqID "NC_000006.11";
+   rsa:represents hg:chr6 .
+
+:chr7 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000669.1";
+   rsa:refSeqID "NC_000007.13";
+   rsa:represents hg:chr7 .
+
+:chr8 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000670.1";
+   rsa:refSeqID "NC_000008.10";
+   rsa:represents hg:chr8 .
+
+:chr9 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000671.1";
+   rsa:refSeqID "NC_000009.11";
+   rsa:represents hg:chr9 .
+
+:chrMT a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:non_nuclear;
+   rsa:genBankID "J01415.2";
+   rsa:refSeqID "NC_012920.1";
+   rsa:represents hg:chrMT .
+
+:chrX a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000685.1";
+   rsa:refSeqID "NC_000023.10";
+   rsa:represents hg:chrX .
+
+:chrY a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:chromosome;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "CM000686.1";
+   rsa:refSeqID "NC_000024.9";
+   rsa:represents hg:chrY .
+
+:HG1007_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL877870.2";
+   rsa:isAssociatedWith hg:chr2;
+   rsa:refSeqID "NW_003571031.1" .
+
+:HG1032_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL877872.1";
+   rsa:isAssociatedWith hg:chr4;
+   rsa:refSeqID "NW_003571034.1" .
+
+:HG104_HG975_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383535.1";
+   rsa:isAssociatedWith hg:chr8;
+   rsa:refSeqID "NW_003315923.1" .
+
+:HG1063_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159133.1";
+   rsa:isAssociatedWith hg:chr5;
+   rsa:refSeqID "NW_003871061.1" .
+
+:HG1091_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159131.1";
+   rsa:isAssociatedWith hg:chr3;
+   rsa:refSeqID "NW_003871058.1" .
+
+:HG1133_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949745.1";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003571047.1" .
+
+:HG1146_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720447.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003871086.1" .
+
+:HG115_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582968.1";
+   rsa:isAssociatedWith hg:chr7;
+   rsa:refSeqID "NW_003571037.1" .
+
+:HG1208_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720446.1";
+   rsa:isAssociatedWith hg:chr16;
+   rsa:refSeqID "NW_003871085.1" .
+
+:HG1211_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH591181.2";
+   rsa:isAssociatedWith hg:chr10;
+   rsa:refSeqID "NW_003871068.1" .
+
+:HG122_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720443.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871072.1" .
+
+:HG1257_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159134.2";
+   rsa:isAssociatedWith hg:chr7;
+   rsa:refSeqID "NW_003871064.1" .
+
+:HG1287_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH636052.3";
+   rsa:isAssociatedWith hg:chr1 .
+
+:HG1292_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH636053.1";
+   rsa:isAssociatedWith hg:chr1;
+   rsa:refSeqID "NW_003871056.1" .
+
+:HG1293_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH636054.1";
+   rsa:isAssociatedWith hg:chr1;
+   rsa:refSeqID "NW_003871057.1" .
+
+:HG1304_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH636056.1";
+   rsa:isAssociatedWith hg:chr6;
+   rsa:refSeqID "NW_003871062.1" .
+
+:HG1308_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH636058.1";
+   rsa:isAssociatedWith hg:chr7;
+   rsa:refSeqID "NW_003871065.1" .
+
+:HG1322_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH636057.1";
+   rsa:isAssociatedWith hg:chr6;
+   rsa:refSeqID "NW_003871063.1" .
+
+:HG1423_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720451.1";
+   rsa:isAssociatedWith hg:chrX;
+   rsa:refSeqID "NW_003871098.1" .
+
+:HG1424_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720452.1";
+   rsa:isAssociatedWith hg:chrX;
+   rsa:refSeqID "NW_003871099.1" .
+
+:HG1425_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720453.1";
+   rsa:isAssociatedWith hg:chrX;
+   rsa:refSeqID "NW_003871100.1" .
+
+:HG1426_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720454.2";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG142_HG150_NOVEL_TEST a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159136.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871073.1" .
+
+:HG1433_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806587.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1434_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806588.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1435_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806589.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1436_HG1432_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806590.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1437_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806591.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1438_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806592.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1439_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806593.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1440_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806594.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1441_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806595.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1442_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806596.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1443_HG1444_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806597.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG144_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720448.1";
+   rsa:isAssociatedWith hg:chr20;
+   rsa:refSeqID "NW_003871095.1" .
+
+:HG1453_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806598.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1458_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806599.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1459_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806600.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1462_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806601.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1463_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806602.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1471_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806573.1";
+   rsa:isAssociatedWith hg:chr1 .
+
+:HG1472_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806574.1";
+   rsa:isAssociatedWith hg:chr1 .
+
+:HG1473_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806575.1";
+   rsa:isAssociatedWith hg:chr1 .
+
+:HG1479_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806580.1";
+   rsa:isAssociatedWith hg:chr10 .
+
+:HG1486_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806583.1";
+   rsa:isAssociatedWith hg:chr22 .
+
+:HG1487_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806584.1";
+   rsa:isAssociatedWith hg:chr22 .
+
+:HG1488_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806585.1";
+   rsa:isAssociatedWith hg:chr22 .
+
+:HG1490_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806603.1";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG1497_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159150.2";
+   rsa:isAssociatedWith hg:chrX .
+
+:HG14_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582969.1";
+   rsa:isAssociatedWith hg:chr7;
+   rsa:refSeqID "NW_003571038.1" .
+
+:HG1500_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806577.1";
+   rsa:isAssociatedWith hg:chr9 .
+
+:HG1501_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806578.1";
+   rsa:isAssociatedWith hg:chr9 .
+
+:HG1502_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806579.1";
+   rsa:isAssociatedWith hg:chr9 .
+
+:HG151_NOVEL_TEST a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159137.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871074.1" .
+
+:HG183_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383558.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003315947.1" .
+
+:HG185_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582976.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003571052.1" .
+
+:HG186_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383523.1";
+   rsa:isAssociatedWith hg:chr3;
+   rsa:refSeqID "NW_003315910.1" .
+
+:HG19_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949743.1";
+   rsa:isAssociatedWith hg:chr8;
+   rsa:refSeqID "NW_003571042.1" .
+
+:HG243_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383536.1";
+   rsa:isAssociatedWith hg:chr8;
+   rsa:refSeqID "NW_003315924.1" .
+
+:HG256_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH591184.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871075.1" .
+
+:HG271_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH636061.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003871087.1" .
+
+:HG27_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806576.1";
+   rsa:isAssociatedWith hg:chr6 .
+
+:HG280_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383524.1";
+   rsa:isAssociatedWith hg:chr3;
+   rsa:refSeqID "NW_003315911.1" .
+
+:HG281_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582973.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003571045.1" .
+
+:HG299_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159138.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871076.1" .
+
+:HG305_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159139.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871077.1" .
+
+:HG306_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159140.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871078.1" .
+
+:HG311_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH591182.1";
+   rsa:isAssociatedWith hg:chr10;
+   rsa:refSeqID "NW_003871069.1" .
+
+:HG325_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159132.1";
+   rsa:isAssociatedWith hg:chr3;
+   rsa:refSeqID "NW_003871059.1" .
+
+:HG329_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720449.1";
+   rsa:isAssociatedWith hg:chr22;
+   rsa:refSeqID "NW_003871096.1" .
+
+:HG339_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH591183.1";
+   rsa:isAssociatedWith hg:chr10;
+   rsa:refSeqID "NW_003871070.1" .
+
+:HG344_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720444.1";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003871083.1" .
+
+:HG348_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159141.2";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871079.1" .
+
+:HG375_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720455.1";
+   rsa:isAssociatedWith hg:chrX;
+   rsa:refSeqID "NW_003871102.1" .
+
+:HG388_HG400_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159142.2";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871080.1" .
+
+:HG414_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159143.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871081.1" .
+
+:HG417_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806582.1";
+   rsa:isAssociatedWith hg:chr17 .
+
+:HG418_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159135.1";
+   rsa:isAssociatedWith hg:chr8;
+   rsa:refSeqID "NW_003871066.1" .
+
+:HG480_HG481_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL877877.1";
+   rsa:isAssociatedWith hg:chrX;
+   rsa:refSeqID "NW_003571064.1" .
+
+:HG497_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806586.1";
+   rsa:isAssociatedWith hg:chr22 .
+
+:HG506_HG507_HG1000_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582979.2";
+   rsa:isAssociatedWith hg:chr20;
+   rsa:refSeqID "NW_003571063.2" .
+
+:HG531_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582975.1";
+   rsa:isAssociatedWith hg:chr13;
+   rsa:refSeqID "NW_003571051.1" .
+
+:HG536_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949744.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003571046.1" .
+
+:HG544_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383543.1";
+   rsa:isAssociatedWith hg:chr10;
+   rsa:refSeqID "NW_003315932.1" .
+
+:HG686_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL877871.1";
+   rsa:isAssociatedWith hg:chr2;
+   rsa:refSeqID "NW_003571032.1" .
+
+:HG706_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582967.1";
+   rsa:isAssociatedWith hg:chr4;
+   rsa:refSeqID "NW_003571035.1" .
+
+:HG729_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159149.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003871094.1" .
+
+:HG730_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582977.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003571053.1" .
+
+:HG736_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582970.1";
+   rsa:isAssociatedWith hg:chr7;
+   rsa:refSeqID "NW_003571039.1" .
+
+:HG745_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383559.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003315948.1" .
+
+:HG747_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159144.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003871088.1" .
+
+:HG748_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH591186.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003871089.1" .
+
+:HG75_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383560.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003315949.1" .
+
+:HG79_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL339450.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NW_003315925.1" .
+
+:HG7_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582971.1";
+   rsa:isAssociatedWith hg:chr7;
+   rsa:refSeqID "NW_003571040.1" .
+
+:HG858_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582974.1";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003571048.1" .
+
+:HG865_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH806581.1";
+   rsa:isAssociatedWith hg:chr11 .
+
+:HG871_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH636060.1";
+   rsa:isAssociatedWith hg:chr10;
+   rsa:refSeqID "NW_003871071.1" .
+
+:HG873_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH591185.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003871082.1" .
+
+:HG883_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159145.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003871090.1" .
+
+:HG905_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL877873.1";
+   rsa:isAssociatedWith hg:chr10;
+   rsa:refSeqID "NW_003571043.1" .
+
+:HG946_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582972.1";
+   rsa:isAssociatedWith hg:chr7;
+   rsa:refSeqID "NW_003571041.1" .
+
+:HG962_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH636059.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NW_003871067.1" .
+
+:HG971_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH720445.1";
+   rsa:isAssociatedWith hg:chr15;
+   rsa:refSeqID "NW_003871084.1" .
+
+:HG987_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383561.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003315950.1" .
+
+:HG989_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949741.1";
+   rsa:isAssociatedWith hg:chr1;
+   rsa:refSeqID "NW_003571030.1" .
+
+:HG990_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383562.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003315951.1" .
+
+:HG991_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383525.1";
+   rsa:isAssociatedWith hg:chr3;
+   rsa:refSeqID "NW_003315912.1" .
+
+:HG995_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383544.1";
+   rsa:isAssociatedWith hg:chr10;
+   rsa:refSeqID "NW_003315933.1" .
+
+:HG996_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383548.1";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003315937.1" .
+
+:HG998_1_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383537.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NW_003315926.1" .
+
+:HG998_2_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383538.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NW_003315927.1" .
+
+:HG999_1_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383516.1";
+   rsa:isAssociatedWith hg:chr1;
+   rsa:refSeqID "NW_003315903.1" .
+
+:HG999_2_PATCH a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:fix_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383517.1";
+   rsa:isAssociatedWith hg:chr1;
+   rsa:refSeqID "NW_003315904.1" .
+
+:HSCHR10_1_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383545.1";
+   rsa:isAssociatedWith hg:chr10;
+   rsa:refSeqID "NW_003315934.1" .
+
+:HSCHR10_1_CTG5 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383546.1";
+   rsa:isAssociatedWith hg:chr10;
+   rsa:refSeqID "NW_003315935.1" .
+
+:HSCHR11_1_CTG1_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383547.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NW_003315936.1" .
+
+:HSCHR11_RANDOM_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000202.1";
+   rsa:isAssociatedWith hg:chr11;
+   rsa:refSeqID "NT_113921.2" .
+
+:HSCHR12_1_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL877875.1";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003571049.1" .
+
+:HSCHR12_1_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383549.1";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003315938.1" .
+
+:HSCHR12_1_CTG2_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383550.1";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003315939.1" .
+
+:HSCHR12_1_CTG5 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383551.1";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003315940.1" .
+
+:HSCHR12_2_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL877876.1";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003571050.1" .
+
+:HSCHR12_2_CTG2_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383552.1";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003315941.1" .
+
+:HSCHR12_3_CTG2_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383553.2";
+   rsa:isAssociatedWith hg:chr12;
+   rsa:refSeqID "NW_003315942.2" .
+
+:HSCHR15_1_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383554.1";
+   rsa:isAssociatedWith hg:chr15;
+   rsa:refSeqID "NW_003315943.1" .
+
+:HSCHR15_1_CTG8 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383555.1";
+   rsa:isAssociatedWith hg:chr15;
+   rsa:refSeqID "NW_003315944.1" .
+
+:HSCHR16_1_CTG3_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383556.1";
+   rsa:isAssociatedWith hg:chr16;
+   rsa:refSeqID "NW_003315945.1" .
+
+:HSCHR16_2_CTG3_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383557.1";
+   rsa:isAssociatedWith hg:chr16;
+   rsa:refSeqID "NW_003315946.1" .
+
+:HSCHR17_1_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383563.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003315952.1" .
+
+:HSCHR17_1_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383564.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003315953.1" .
+
+:HSCHR17_1_CTG5 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:alt_scaffold;
+   ncbi:inAssemblyUnit ncbi:alt_ref_loci_9;
+   rsa:genBankID "GL000258.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NT_167251.1" .
+
+:HSCHR17_2_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383565.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003315954.1" .
+
+:HSCHR17_3_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383566.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003315955.1" .
+
+:HSCHR17_4_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159146.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003871091.1" .
+
+:HSCHR17_5_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159147.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003871092.1" .
+
+:HSCHR17_6_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH159148.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NW_003871093.1" .
+
+:HSCHR17_RANDOM_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000203.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NT_113941.1" .
+
+:HSCHR17_RANDOM_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000204.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NT_113943.1" .
+
+:HSCHR17_RANDOM_CTG3 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000205.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NT_113930.1" .
+
+:HSCHR17_RANDOM_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000206.1";
+   rsa:isAssociatedWith hg:chr17;
+   rsa:refSeqID "NT_113945.1" .
+
+:HSCHR18_1_CTG1_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383567.1";
+   rsa:isAssociatedWith hg:chr18;
+   rsa:refSeqID "NW_003315956.1" .
+
+:HSCHR18_1_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383568.1";
+   rsa:isAssociatedWith hg:chr18;
+   rsa:refSeqID "NW_003315957.1" .
+
+:HSCHR18_1_CTG2_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383569.1";
+   rsa:isAssociatedWith hg:chr18;
+   rsa:refSeqID "NW_003315958.1" .
+
+:HSCHR18_2_CTG1_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383570.1";
+   rsa:isAssociatedWith hg:chr18;
+   rsa:refSeqID "NW_003315959.1" .
+
+:HSCHR18_2_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383571.1";
+   rsa:isAssociatedWith hg:chr18;
+   rsa:refSeqID "NW_003315960.1" .
+
+:HSCHR18_2_CTG2_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383572.1";
+   rsa:isAssociatedWith hg:chr18;
+   rsa:refSeqID "NW_003315961.1" .
+
+:HSCHR18_RANDOM_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000207.1";
+   rsa:isAssociatedWith hg:chr18;
+   rsa:refSeqID "NT_113947.1" .
+
+:HSCHR19LRC_COX1_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949746.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003571054.1" .
+
+:HSCHR19LRC_COX2_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949747.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003571055.1" .
+
+:HSCHR19LRC_LRC_I_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949748.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003571056.1" .
+
+:HSCHR19LRC_LRC_J_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949749.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003571057.1" .
+
+:HSCHR19LRC_LRC_S_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949750.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003571058.1" .
+
+:HSCHR19LRC_LRC_T_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949751.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003571059.1" .
+
+:HSCHR19LRC_PGF1_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949752.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003571060.1" .
+
+:HSCHR19LRC_PGF2_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949753.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003571061.1" .
+
+:HSCHR19_1_CTG3 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383573.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003315962.1" .
+
+:HSCHR19_1_CTG3_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383574.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003315963.1" .
+
+:HSCHR19_2_CTG3 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383575.2";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003315964.2" .
+
+:HSCHR19_3_CTG3 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383576.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NW_003315965.1" .
+
+:HSCHR19_RANDOM_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000208.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NT_113948.1" .
+
+:HSCHR19_RANDOM_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000209.1";
+   rsa:isAssociatedWith hg:chr19;
+   rsa:refSeqID "NT_113949.1" .
+
+:HSCHR1_1_CTG31 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383518.1";
+   rsa:isAssociatedWith hg:chr1;
+   rsa:refSeqID "NW_003315905.1" .
+
+:HSCHR1_2_CTG31 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383519.1";
+   rsa:isAssociatedWith hg:chr1;
+   rsa:refSeqID "NW_003315906.1" .
+
+:HSCHR1_3_CTG31 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383520.1";
+   rsa:isAssociatedWith hg:chr1;
+   rsa:refSeqID "NW_003315907.1" .
+
+:HSCHR1_RANDOM_CTG12 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000192.1";
+   rsa:isAssociatedWith hg:chr1;
+   rsa:refSeqID "NT_167207.1" .
+
+:HSCHR1_RANDOM_CTG5 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000191.1";
+   rsa:isAssociatedWith hg:chr1;
+   rsa:refSeqID "NT_113878.1" .
+
+:HSCHR20_1_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383577.1";
+   rsa:isAssociatedWith hg:chr20;
+   rsa:refSeqID "NW_003315966.1" .
+
+:HSCHR21_1_CTG1_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383578.1";
+   rsa:isAssociatedWith hg:chr21;
+   rsa:refSeqID "NW_003315967.1" .
+
+:HSCHR21_2_CTG1_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383579.1";
+   rsa:isAssociatedWith hg:chr21;
+   rsa:refSeqID "NW_003315968.1" .
+
+:HSCHR21_3_CTG1_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383580.1";
+   rsa:isAssociatedWith hg:chr21;
+   rsa:refSeqID "NW_003315969.1" .
+
+:HSCHR21_4_CTG1_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383581.1";
+   rsa:isAssociatedWith hg:chr21;
+   rsa:refSeqID "NW_003315970.1" .
+
+:HSCHR21_RANDOM_CTG9 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000210.1";
+   rsa:isAssociatedWith hg:chr21;
+   rsa:refSeqID "NT_113950.2" .
+
+:HSCHR22_1_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383582.1";
+   rsa:isAssociatedWith hg:chr22;
+   rsa:refSeqID "NW_003315971.1" .
+
+:HSCHR22_1_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383583.1";
+   rsa:isAssociatedWith hg:chr22;
+   rsa:refSeqID "NW_003315972.1" .
+
+:HSCHR2_1_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383521.1";
+   rsa:isAssociatedWith hg:chr2;
+   rsa:refSeqID "NW_003315908.1" .
+
+:HSCHR2_1_CTG12 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383522.1";
+   rsa:isAssociatedWith hg:chr2;
+   rsa:refSeqID "NW_003315909.1" .
+
+:HSCHR2_2_CTG12 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL582966.2";
+   rsa:isAssociatedWith hg:chr2;
+   rsa:refSeqID "NW_003571033.2" .
+
+:HSCHR3_1_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "JH636055.1";
+   rsa:isAssociatedWith hg:chr3;
+   rsa:refSeqID "NW_003871060.1" .
+
+:HSCHR3_1_CTG2_1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383526.1";
+   rsa:isAssociatedWith hg:chr3;
+   rsa:refSeqID "NW_003315913.1" .
+
+:HSCHR4_1_CTG12 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383527.1";
+   rsa:isAssociatedWith hg:chr4;
+   rsa:refSeqID "NW_003315914.1" .
+
+:HSCHR4_1_CTG6 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383528.1";
+   rsa:isAssociatedWith hg:chr4;
+   rsa:refSeqID "NW_003315915.1" .
+
+:HSCHR4_1_CTG9 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:alt_scaffold;
+   ncbi:inAssemblyUnit ncbi:alt_ref_loci_8;
+   rsa:genBankID "GL000257.1";
+   rsa:isAssociatedWith hg:chr4;
+   rsa:refSeqID "NT_167250.1" .
+
+:HSCHR4_2_CTG9 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383529.1";
+   rsa:isAssociatedWith hg:chr4;
+   rsa:refSeqID "NW_003315916.1" .
+
+:HSCHR4_RANDOM_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000193.1";
+   rsa:isAssociatedWith hg:chr4;
+   rsa:refSeqID "NT_113885.1" .
+
+:HSCHR4_RANDOM_CTG3 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000194.1";
+   rsa:isAssociatedWith hg:chr4;
+   rsa:refSeqID "NT_113888.1" .
+
+:HSCHR5_1_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL339449.2";
+   rsa:isAssociatedWith hg:chr5;
+   rsa:refSeqID "NW_003315917.2" .
+
+:HSCHR5_1_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383530.1";
+   rsa:isAssociatedWith hg:chr5;
+   rsa:refSeqID "NW_003315918.1" .
+
+:HSCHR5_1_CTG5 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383531.1";
+   rsa:isAssociatedWith hg:chr5;
+   rsa:refSeqID "NW_003315919.1" .
+
+:HSCHR5_2_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383532.1";
+   rsa:isAssociatedWith hg:chr5;
+   rsa:refSeqID "NW_003315920.1" .
+
+:HSCHR5_3_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL949742.1";
+   rsa:isAssociatedWith hg:chr5;
+   rsa:refSeqID "NW_003571036.1" .
+
+:HSCHR6_1_CTG5 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383533.1";
+   rsa:isAssociatedWith hg:chr6;
+   rsa:refSeqID "NW_003315921.1" .
+
+:HSCHR6_MHC_APD_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:alt_scaffold;
+   ncbi:inAssemblyUnit ncbi:alt_ref_loci_1;
+   rsa:genBankID "GL000250.1";
+   rsa:isAssociatedWith hg:chr6;
+   rsa:refSeqID "NT_167244.1" .
+
+:HSCHR6_MHC_COX_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:alt_scaffold;
+   ncbi:inAssemblyUnit ncbi:alt_ref_loci_2;
+   rsa:genBankID "GL000251.1";
+   rsa:isAssociatedWith hg:chr6;
+   rsa:refSeqID "NT_113891.2" .
+
+:HSCHR6_MHC_DBB_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:alt_scaffold;
+   ncbi:inAssemblyUnit ncbi:alt_ref_loci_3;
+   rsa:genBankID "GL000252.1";
+   rsa:isAssociatedWith hg:chr6;
+   rsa:refSeqID "NT_167245.1" .
+
+:HSCHR6_MHC_MANN_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:alt_scaffold;
+   ncbi:inAssemblyUnit ncbi:alt_ref_loci_4;
+   rsa:genBankID "GL000253.1";
+   rsa:isAssociatedWith hg:chr6;
+   rsa:refSeqID "NT_167246.1" .
+
+:HSCHR6_MHC_MCF_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:alt_scaffold;
+   ncbi:inAssemblyUnit ncbi:alt_ref_loci_5;
+   rsa:genBankID "GL000254.1";
+   rsa:isAssociatedWith hg:chr6;
+   rsa:refSeqID "NT_167247.1" .
+
+:HSCHR6_MHC_QBL_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:alt_scaffold;
+   ncbi:inAssemblyUnit ncbi:alt_ref_loci_6;
+   rsa:genBankID "GL000255.1";
+   rsa:isAssociatedWith hg:chr6;
+   rsa:refSeqID "NT_167248.1" .
+
+:HSCHR6_MHC_SSTO_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:alt_scaffold;
+   ncbi:inAssemblyUnit ncbi:alt_ref_loci_7;
+   rsa:genBankID "GL000256.1";
+   rsa:isAssociatedWith hg:chr6;
+   rsa:refSeqID "NT_167249.1" .
+
+:HSCHR7_1_CTG6 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383534.2";
+   rsa:isAssociatedWith hg:chr7;
+   rsa:refSeqID "NW_003315922.2" .
+
+:HSCHR7_RANDOM_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000195.1";
+   rsa:isAssociatedWith hg:chr7;
+   rsa:refSeqID "NT_113901.1" .
+
+:HSCHR8_RANDOM_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000196.1";
+   rsa:isAssociatedWith hg:chr8;
+   rsa:refSeqID "NT_113909.1" .
+
+:HSCHR8_RANDOM_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000197.1";
+   rsa:isAssociatedWith hg:chr8;
+   rsa:refSeqID "NT_113907.1" .
+
+:HSCHR9_1_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383539.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NW_003315928.1" .
+
+:HSCHR9_1_CTG35 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383540.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NW_003315929.1" .
+
+:HSCHR9_2_CTG35 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383541.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NW_003315930.1" .
+
+:HSCHR9_3_CTG35 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:novel_patch;
+   ncbi:inAssemblyUnit ncbi:patches;
+   rsa:genBankID "GL383542.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NW_003315931.1" .
+
+:HSCHR9_RANDOM_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000198.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NT_113914.1" .
+
+:HSCHR9_RANDOM_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000199.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NT_113916.2" .
+
+:HSCHR9_RANDOM_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000200.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NT_113915.1" .
+
+:HSCHR9_RANDOM_CTG5 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unlocalized_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000201.1";
+   rsa:isAssociatedWith hg:chr9;
+   rsa:refSeqID "NT_113911.1" .
+
+:HSCHRUN_RANDOM_CTG1 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000211.1";
+   rsa:refSeqID "NT_113961.1" .
+
+:HSCHRUN_RANDOM_CTG10 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000219.1";
+   rsa:refSeqID "NT_167213.1" .
+
+:HSCHRUN_RANDOM_CTG11 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000220.1";
+   rsa:refSeqID "NT_167214.1" .
+
+:HSCHRUN_RANDOM_CTG13 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000221.1";
+   rsa:refSeqID "NT_167215.1" .
+
+:HSCHRUN_RANDOM_CTG14 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000222.1";
+   rsa:refSeqID "NT_167216.1" .
+
+:HSCHRUN_RANDOM_CTG15 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000223.1";
+   rsa:refSeqID "NT_167217.1" .
+
+:HSCHRUN_RANDOM_CTG16 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000224.1";
+   rsa:refSeqID "NT_167218.1" .
+
+:HSCHRUN_RANDOM_CTG17 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000225.1";
+   rsa:refSeqID "NT_167219.1" .
+
+:HSCHRUN_RANDOM_CTG19 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000226.1";
+   rsa:refSeqID "NT_167220.1" .
+
+:HSCHRUN_RANDOM_CTG2 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000212.1";
+   rsa:refSeqID "NT_113923.1" .
+
+:HSCHRUN_RANDOM_CTG20 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000227.1";
+   rsa:refSeqID "NT_167221.1" .
+
+:HSCHRUN_RANDOM_CTG21 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000228.1";
+   rsa:refSeqID "NT_167222.1" .
+
+:HSCHRUN_RANDOM_CTG22 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000229.1";
+   rsa:refSeqID "NT_167223.1" .
+
+:HSCHRUN_RANDOM_CTG23 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000230.1";
+   rsa:refSeqID "NT_167224.1" .
+
+:HSCHRUN_RANDOM_CTG24 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000231.1";
+   rsa:refSeqID "NT_167225.1" .
+
+:HSCHRUN_RANDOM_CTG25 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000232.1";
+   rsa:refSeqID "NT_167226.1" .
+
+:HSCHRUN_RANDOM_CTG26 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000233.1";
+   rsa:refSeqID "NT_167227.1" .
+
+:HSCHRUN_RANDOM_CTG27 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000234.1";
+   rsa:refSeqID "NT_167228.1" .
+
+:HSCHRUN_RANDOM_CTG28 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000235.1";
+   rsa:refSeqID "NT_167229.1" .
+
+:HSCHRUN_RANDOM_CTG29 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000236.1";
+   rsa:refSeqID "NT_167230.1" .
+
+:HSCHRUN_RANDOM_CTG3 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000213.1";
+   rsa:refSeqID "NT_167208.1" .
+
+:HSCHRUN_RANDOM_CTG30 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000237.1";
+   rsa:refSeqID "NT_167231.1" .
+
+:HSCHRUN_RANDOM_CTG31 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000238.1";
+   rsa:refSeqID "NT_167232.1" .
+
+:HSCHRUN_RANDOM_CTG32 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000239.1";
+   rsa:refSeqID "NT_167233.1" .
+
+:HSCHRUN_RANDOM_CTG33 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000240.1";
+   rsa:refSeqID "NT_167234.1" .
+
+:HSCHRUN_RANDOM_CTG34 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000241.1";
+   rsa:refSeqID "NT_167235.1" .
+
+:HSCHRUN_RANDOM_CTG35 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000242.1";
+   rsa:refSeqID "NT_167236.1" .
+
+:HSCHRUN_RANDOM_CTG36 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000243.1";
+   rsa:refSeqID "NT_167237.1" .
+
+:HSCHRUN_RANDOM_CTG37 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000244.1";
+   rsa:refSeqID "NT_167238.1" .
+
+:HSCHRUN_RANDOM_CTG38 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000245.1";
+   rsa:refSeqID "NT_167239.1" .
+
+:HSCHRUN_RANDOM_CTG39 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000246.1";
+   rsa:refSeqID "NT_167240.1" .
+
+:HSCHRUN_RANDOM_CTG4 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000214.1";
+   rsa:refSeqID "NT_167209.1" .
+
+:HSCHRUN_RANDOM_CTG40 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000247.1";
+   rsa:refSeqID "NT_167241.1" .
+
+:HSCHRUN_RANDOM_CTG41 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000248.1";
+   rsa:refSeqID "NT_167242.1" .
+
+:HSCHRUN_RANDOM_CTG42 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000249.1";
+   rsa:refSeqID "NT_167243.1" .
+
+:HSCHRUN_RANDOM_CTG5 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000215.1";
+   rsa:refSeqID "NT_167210.1" .
+
+:HSCHRUN_RANDOM_CTG6 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000216.1";
+   rsa:refSeqID "NT_167211.1" .
+
+:HSCHRUN_RANDOM_CTG7 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000217.1";
+   rsa:refSeqID "NT_167212.1" .
+
+:HSCHRUN_RANDOM_CTG9 a rsa:ReferenceSequence;
+   dcterms:partOf :Assembly;
+   ncbi:hasRole ncbi:unplaced_scaffold;
+   ncbi:inAssemblyUnit ncbi:primary_assembly;
+   rsa:genBankID "GL000218.1";
+   rsa:refSeqID "NT_113889.1" .
